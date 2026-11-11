@@ -1,18 +1,12 @@
-import Entete from './components/Entete.jsx'
-import ListeTaches from './components/ListeTaches.jsx'
-import Pied from './components/Pied.jsx'
 
-function App() {
+const ANNEE = new Date().getFullYear()
+
+function Pied() {
   return (
-    <div className="app">
-      <Entete />
-      <section className="carte">
-        <h2>Ma liste</h2>
-        <ListeTaches />
-      </section>
-      <Pied />
-    </div>
+    <footer className="pied">
+      TP React – {ANNEE}
+    </footer>
   )
 }
 
-export default App
+export default Pied
